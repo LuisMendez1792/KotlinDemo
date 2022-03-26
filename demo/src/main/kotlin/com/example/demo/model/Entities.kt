@@ -6,8 +6,6 @@ import lombok.NoArgsConstructor
 import java.time.LocalDateTime
 import javax.persistence.*
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
 class Article (
     var title: String,
@@ -18,8 +16,6 @@ class Article (
     var addedAt: LocalDateTime = LocalDateTime.now(),
     @Id @GeneratedValue var id: Long? = null)
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Entity
 class User(
     var login: String,
